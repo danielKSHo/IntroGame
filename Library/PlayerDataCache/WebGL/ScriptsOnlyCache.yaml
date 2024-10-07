@@ -1,8 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp.dll:
+    - CameraController
+    - PlayerController
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.PlayerInput
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.PlasticSCM.Editor.dll:
     - Unity.PlasticSCM.Editor.PlasticWindow
@@ -13,7 +18,18 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-  serializedClasses: {}
+  serializedClasses:
+    Unity.InputSystem:
+    - UnityEngine.InputSystem.InputAction
+    - UnityEngine.InputSystem.InputActionMap
+    - UnityEngine.InputSystem.InputBinding
+    - UnityEngine.InputSystem.InputControlScheme
+    - UnityEngine.InputSystem.InputControlScheme/DeviceRequirement
+    - UnityEngine.InputSystem.PlayerInput/ControlsChangedEvent
+    - UnityEngine.InputSystem.PlayerInput/DeviceLostEvent
+    - UnityEngine.InputSystem.PlayerInput/DeviceRegainedEvent
+    UnityEngine.CoreModule:
+    - UnityEngine.Events.PersistentCallGroup
   methodsToPreserve: []
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -35,6 +51,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -46,6 +64,16 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17172}
+    - Class: 114
+      Script: {instanceID: 17298}
+    - Class: 114
+      Script: {instanceID: 19486}
+    - Class: 114
+      Script: {instanceID: 19714}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -84,6 +112,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71668efd4d92a44ca6246fb490c3a8b4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraController
   - hash:
       serializedVersion: 2
       Hash: 94f8303fca6ba25383fc62595e324b7b
@@ -414,6 +448,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputDebuggerWindow
+  - hash:
+      serializedVersion: 2
+      Hash: b9544b21b5462df773709cf9ea905b26
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerController
   - hash:
       serializedVersion: 2
       Hash: 7707f03811d4c070f3f62471c872b26e

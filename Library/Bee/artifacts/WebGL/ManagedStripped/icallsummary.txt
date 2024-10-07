@@ -500,6 +500,7 @@ UnityEngine.Resources::GetBuiltinResource
 UnityEngine.ResourcesAPIInternal::Load
 UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
 UnityEngine.ResourcesAPIInternal::FindShaderByName
+UnityEngine.Rigidbody::AddForce_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
@@ -586,6 +587,7 @@ UnityEngine.Texture2DArray::get_isReadable_Injected
 UnityEngine.Texture3D::Internal_CreateImpl
 UnityEngine.Texture3D::get_isReadable_Injected
 UnityEngine.Time::get_deltaTime
+UnityEngine.Time::get_fixedDeltaTime
 UnityEngine.Time::get_fixedUnscaledTime
 UnityEngine.Time::get_realtimeSinceStartup
 UnityEngine.Time::get_unscaledDeltaTime
@@ -621,6 +623,7 @@ UnityEngine.Transform::get_worldToLocalMatrix_Injected
 UnityEngine.Transform::set_localPosition_Injected
 UnityEngine.Transform::set_localRotation_Injected
 UnityEngine.Transform::set_localScale_Injected
+UnityEngine.Transform::set_position_Injected
 UnityEngine.Transform::FindRelativeTransformWithPath_Injected
 UnityEngine.Transform::GetChild_Injected
 UnityEngine.Transform::GetParent_Injected
