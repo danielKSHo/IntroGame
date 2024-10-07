@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public Vector2 moveValue;
-    public float speed = 500;
+    public float speed;
     void OnMove(InputValue value)
     {
         moveValue = value.Get<Vector2>();
